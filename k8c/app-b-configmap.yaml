@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-b-configmap
+data:
+  CORE_CRM_URL: "http://core-crm:8080"

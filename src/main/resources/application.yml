@@ -1,0 +1,15 @@
+server:
+  port: 8081
+  address: 0.0.0.0
+
+app:
+  core-crm-url: ${CORE_CRM_URL:http://core-crm:8080}
+
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: health,info
+    endpoint:
+      health:
+        show-details: always
